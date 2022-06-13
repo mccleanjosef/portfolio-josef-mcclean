@@ -6,8 +6,26 @@ body{
     font-weight: $regular;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 h2{
     font-weight: $regular;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+p{
+    font-size: 1.6rem;
+    width: 60ch;
+}
+
+button{
+    padding: 0.5em 1em;
+    margin-top: 3rem;
+    cursor: pointer;
 }
 
 .hide{
@@ -172,7 +190,7 @@ form{
     width: 95vw;
     height: 95vh;
     border-radius: 0.5em;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     color: #ffffff;
     position: fixed;
     top: 50%;
