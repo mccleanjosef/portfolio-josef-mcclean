@@ -1,0 +1,220 @@
+#projectOverlay{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 2;
+  opacity: 0;
+}
+
+.fade-in{
+  -webkit-animation: fadeIn ease 0.5s forwards;
+  -moz-animation: fadeIn ease 0.5s forwards;
+  -o-animation: fadeIn ease 0.5s forwards;
+  -ms-animation: fadeIn ease 0.5s forwards;
+  animation: fadeIn ease 0.5s forwards;
+}
+
+.fade-out{
+  -webkit-animation: fadeOut ease 0.5s;
+  -moz-animation: fadeOut ease 0.5s;
+  -o-animation: fadeOut ease 0.5s;
+  -ms-animation: fadeOut ease 0.5s;
+  animation: fadeOut ease 0.5s;
+}
+
+.project-ctn{
+    width: 95vw;
+    height: 95vh;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    color: $white;
+    padding: 3rem 0 1rem 5rem;
+}
+
+.project{
+    display: flex;
+    flex-flow: column wrap;
+    overflow-x: auto;
+    // background-color: aquamarine;
+    width: auto;
+    height: 100%;
+    position: relative;
+
+    &__close-circle{
+        width: 7rem;
+        height: 7rem;
+        background: $black;
+        position: fixed;
+        right: 3rem;
+        top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    &__close{
+        height: 4rem;
+        width: 4rem;
+        color: white;
+    }
+
+    &__title{
+        width: 68vw;
+        padding-right: 5rem;
+    }
+
+    &__img-wrapper{
+        width: 68vw;
+        height: 30vh;
+        padding-right: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    &__overlay-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__sub-title{
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    &__tool-imgs{
+      display: flex;
+      flex-flow: row wrap;
+      max-width: 68vw;
+    }
+
+    &__tool-ctn{
+      width: auto;
+      height: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: flex-end;
+      padding: 1rem;
+    }
+
+    &__tool-img{
+      // max-height: 4rem;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &__tool-text{
+      width: auto;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    &__text{
+        width: 68vw;
+        padding-right: 5rem;
+    }
+
+    &__link{
+        width: 68vw;
+        padding-right: 5rem;
+    }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

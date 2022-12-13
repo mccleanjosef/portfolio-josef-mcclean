@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&family=Roboto&family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Josef McClean</title>
 </head>
@@ -14,52 +14,63 @@
     <section id="projectOverlay" class="project-overlay hide"></section>
     <main>
         <section class="projects-sec">
-            <header class="header">
-                <h2 class="welcome">Hi, my name is</h2>
-            </header>
-            <div class="projects-wrapper perspective">
-                <div class="projects-ctn">
-                    <h1 class="projects-sec__title">Josef McClean</h1>
+            <div class="projects-sec__title-wrap">
+                <h1 class="projects-sec__title">Josef McClean</h1>
+            </div>
+            <div class="marquee__wrapper">
+                <div class="marquee marquee--top">
+                    <div id="projectsTop" class="marquee__content">
+                  
+                    </div>
+                </div>
+                <div class="marquee marquee--middle">
+                    <div id="projectsMiddle" class="marquee__content">
+
+                    </div>
+                </div>
+                <div class="marquee marquee--bottom">
+                    <div id="projectsBottom" class="marquee__content">
+
+                    </div>
                 </div>
             </div>
         </section>
         <section class="about">
-            <div class="image-left"></div>
-            <div class="about-right">
-                <p>Hi there, I'm currently studing Web and UX Design at Yoobee Colleges of Creative Innovation in Wellington, New Zealand.</p>
+            <div class="about__left">
+                <a href="#contact"><button class="about__contact-btn">Contact Me</button></a>
+            </div>
+            <div class="about__right">
+                <p class="about__desc">Hi there, I'm currently studing Web and UX Design at Yoobee Colleges of Creative Innovation in Wellington, New Zealand.</p>
             </div>
         </section>
-        <section class="contact">
-            <h2>Get in touch</h2>
-            <form method="post" class="contact-form">
-                <label for="">Name</label><br />
-                <input class="name" type="text" placeholder="name" required/><br />
-                <label for="">Email</label><br />
-                <input class="email" type="email" placeholder="email" required/><br />
-                <label for="">Message</label><br />
-                <textarea
-                  class="message"
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="message"
-                  required
-                ></textarea
-                ><br />
-                <button type="submit">Submit</button>
+        <section id="contact" class="contact">
+            <h2>Get in touch!</h2>
+            <!-- Contact form uses formkeep.com -->
+            <form action="https://formkeep.com/f/fc98ecd10e6a"
+                  accept-charset="UTF-8"
+                  enctype="multipart/form-data"
+                  method="POST"
+                  target="_blank">
+              <input type="hidden" name="utf8" value="✓">
+
+              <label for="name">Name</label>
+              <input type="full-name" id="fullName" name="name">
+
+              <label for="email-address">Email Address</label>
+              <input type="email" id="email-address" name="email">
+
+              <label for="message">Message</label>
+              <textarea type="contact-message" id="contactMessage" name="message"></textarea>
+
+              <button id="contactSubmit" type="submit">Submit</button>
             </form>
             <div class="infoResults"></div>
         </section>
         <section class="footer section--short"></section>
     </main>
 
-    <!-- Firebase script -->
-    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
-    <!-- https://smtpjs.com/ cdn for contact form -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- jquery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/script.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>

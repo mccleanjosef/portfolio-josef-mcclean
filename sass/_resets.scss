@@ -8,3 +8,37 @@
 html{
     font-size: 62.5%;
 }
+
+body{
+    font-family: $body-font;
+    font-weight: $regular;
+    overflow-y: hidden;
+}
+
+h2{
+    font-weight: $regular;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+p{
+    font-size: 1.6rem;
+    width: 60ch;
+}
+
+button{
+    padding: 0.5em 1em;
+    margin-top: 3rem;
+    cursor: pointer;
+    font-family: $body-font;
+    font-weight: $regular;
+}
+
+a{
+    color: $white;
+}
+
+.hide{
+    display: none;
+}
